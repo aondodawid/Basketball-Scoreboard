@@ -19,7 +19,7 @@ h3 {
   margin: 1rem auto;
 }
 
-section {
+.wrapper {
   display: flex;
   flex-direction: column;
   max-width: 80%;
@@ -119,16 +119,16 @@ section {
   }
 }
 
-@media screen and (max-width:420px) {
-  h3 {
-    font-size: 5vw;
+@media screen and (max-width:490px) {
+  .container {
+    display: block;
   }
 
-  .scores {
-    font-size: 10vw;
+  .content+.content {
+    margin-left: unset;
   }
 
-  .scores__btn {
-    font-size: 0.7rem;
+  .content {
+    width: unset;
   }
 }
